@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Description));
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxDesc = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabelToMap = new System.Windows.Forms.LinkLabel();
             this.labelWorkout = new System.Windows.Forms.Label();
             this.labelExp = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelCheck = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -103,12 +108,44 @@
             this.labelExp.TabIndex = 7;
             this.labelExp.Text = "label1";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(76, 255);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 46);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "FITFIND";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(61, 61);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(201, 160);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // labelCheck
+            // 
+            this.labelCheck.AutoSize = true;
+            this.labelCheck.Location = new System.Drawing.Point(141, 204);
+            this.labelCheck.Name = "labelCheck";
+            this.labelCheck.Size = new System.Drawing.Size(0, 17);
+            this.labelCheck.TabIndex = 10;
+            // 
             // Description
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.labelCheck);
             this.Controls.Add(this.labelExp);
             this.Controls.Add(this.labelWorkout);
             this.Controls.Add(this.linkLabelToMap);
@@ -119,6 +156,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Description_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +170,8 @@
         private System.Windows.Forms.LinkLabel linkLabelToMap;
         private System.Windows.Forms.Label labelWorkout;
         private System.Windows.Forms.Label labelExp;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelCheck;
     }
 }
